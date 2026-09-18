@@ -5,7 +5,7 @@
  * CATATAN PENTING:
  * Testimoni di bawah ini masih bersifat ILUSTRATIF / contoh tampilan,
  * bukan kutipan asli dari pembeli. Silakan ganti isi array REVIEWS ini
- * dengan testimoni asli begitu sudah tersedia — cukup ubah teksnya,
+ * dengan testimoni asli begitu sudah tersedia, cukup ubah teksnya,
  * tampilan di halaman akan otomatis menyesuaikan.
  */
 const REVIEWS = [
@@ -19,7 +19,7 @@ const REVIEWS = [
     initials: "DS",
     name: "Bapak Dimas S.",
     role: "Orang tua, Medan",
-    quote: "Suka konsepnya — beli buku sekaligus bantu donasi. Anak dapat ilmu, kita juga ikut berbagi. Kertasnya juga tebal, aman buat diwarnai berkali-kali."
+    quote: "Suka konsepnya, beli buku sekaligus bantu donasi. Anak dapat ilmu, kita juga ikut berbagi. Kertasnya juga tebal, aman buat diwarnai berkali-kali."
   },
   {
     initials: "NP",

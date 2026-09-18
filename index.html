@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dari Buku Untuk Negeri — Ensiklopedia Pengetahuan Seru untuk Si Kecil | Bekal</title>
+<title>Dari Buku Untuk Negeri: Ensiklopedia Pengetahuan Seru untuk Si Kecil | Bekal</title>
 <meta name="description" content="Buku mewarnai & ensiklopedia pengetahuan untuk anak usia 3-8 tahun. Setiap pembelian turut berdonasi untuk anak-anak negeri yang membutuhkan.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
       <img src="images/logo.jpg" alt="Logo Bekal Bersama Kak L">
       <span class="brand-name">Bekal<span> · Bersama Kak L</span></span>
     </a>
-    <nav class="nav-links">
+    <nav class="nav-links" id="navLinks">
       <a href="index.html" class="active">Beranda</a>
       <a href="katalog.html">Katalog</a>
       <a href="isi-buku.html">Isi Buku</a>
@@ -29,6 +29,9 @@
       <a class="btn btn-gold btn-small" href="https://wa.me/6282175756560?text=Halo%20Kak%20L%2C%20saya%20mau%20pesan%20buku%20Ensiklopedia%20Pengetahuan%20untuk%20anak%20saya" target="_blank" rel="noopener">
         <img src="images/icons/wa-icon.png" alt="" class="wa-ico"> <span class="long">Pesan Sekarang</span>
       </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
 </header>
@@ -58,34 +61,46 @@
       <div class="stack-card stack-3" data-slug="luar-angkasa"><img src="images/covers/luar-angkasa.jpg" alt="Cover buku Benda Luar Angkasa"></div>
       <div class="badge-float b1"><span class="num">30+</span> Judul Tersedia</div>
       <div class="badge-float b2">⭐ Best Seller Series</div>
-      <div class="kid-peek" aria-hidden="true">
-        <img src="images/promo/family-photo-2.jpg" alt="">
-      </div>
     </div>
   </div>
 </section>
 
 <div class="strip">
   <div class="wrap">
-    <span>💛</span> <strong>Setiap pembelian turut menyisihkan donasi</strong> — untuk anak-anak Indonesia yang butuh akses bacaan
+    <span>💛</span> <strong>Setiap pembelian turut menyisihkan donasi</strong> untuk anak-anak Indonesia yang butuh akses bacaan
   </div>
 </div>
 
 <section class="why" id="kenapa">
-  <div class="wrap why-grid">
-    <div class="why-copy reveal">
-      <span class="kicker">KENAPA BUKU INI</span>
-      <h2>Layar boleh menemani, tapi jangan sampai menggantikan waktu belajar si kecil.</h2>
-      <p>Banyak anak sekarang menghabiskan waktu di depan gawai dan game, sementara rasa ingin tahu mereka sebenarnya bisa diarahkan ke hal yang jauh lebih membangun. Ensiklopedia Bekal hadir sebagai teman belajar sambil bermain — dikemas dengan ilustrasi penuh warna yang bikin anak betah duduk mewarnai sambil menyerap pengetahuan baru.</p>
-      <ul class="why-list">
-        <li><span class="ico">✏️</span> Mengasah motorik halus lewat aktivitas mewarnai di setiap halaman</li>
-        <li><span class="ico">🧠</span> Fakta unik & kosakata Bahasa Inggris yang mudah dicerna anak</li>
-        <li><span class="ico">👨‍👩‍👧</span> Jadi momen quality time orang tua dan anak, bukan sekadar screen time</li>
-        <li><span class="ico">🌍</span> 30+ tema — dari hewan, sains, sampai budaya dunia</li>
-      </ul>
-    </div>
-    <div class="why-visual reveal">
-      <img src="images/promo/family-photo.jpg" alt="Ayah, ibu, dan dua anak tersenyum bahagia sambil memegang buku Bangunan Bersejarah Dunia">
+  <div class="wrap">
+    <div class="why-bento">
+      <div class="bento-card bento-intro reveal">
+        <span class="kicker">KENAPA BUKU INI</span>
+        <h2>Layar boleh menemani, tapi jangan sampai menggantikan waktu belajar si kecil.</h2>
+        <p>Banyak anak sekarang menghabiskan waktu di depan gawai dan game, sementara rasa ingin tahu mereka sebenarnya bisa diarahkan ke hal yang jauh lebih membangun. Ensiklopedia Bekal hadir sebagai teman belajar sambil bermain yang dikemas dengan ilustrasi penuh warna yang bikin anak betah duduk mewarnai sambil menyerap pengetahuan baru.</p>
+      </div>
+      <div class="bento-card bento-photo photo-zoom reveal" role="button" tabindex="0" aria-label="Lihat foto lebih besar">
+        <img src="images/promo/family-photo.jpg" alt="Ayah, ibu, dan dua anak tersenyum bahagia sambil memegang buku Bangunan Bersejarah Dunia">
+        <span class="zoom-hint">🔍 Lihat</span>
+      </div>
+      <div class="bento-feats">
+        <div class="bento-card bento-feat reveal">
+          <span class="ico">✏️</span>
+          <p>Mengasah motorik halus lewat aktivitas mewarnai di setiap halaman</p>
+        </div>
+        <div class="bento-card bento-feat reveal">
+          <span class="ico">🧠</span>
+          <p>Fakta unik & kosakata Bahasa Inggris yang mudah dicerna anak</p>
+        </div>
+        <div class="bento-card bento-feat reveal">
+          <span class="ico">👨‍👩‍👧</span>
+          <p>Jadi momen quality time orang tua dan anak, bukan sekadar screen time</p>
+        </div>
+        <div class="bento-card bento-feat reveal">
+          <span class="ico">🌍</span>
+          <p>30+ tema dari hewan, sains, sampai budaya dunia</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -114,7 +129,7 @@
         <span>Bekal · Bersama Kak L</span>
       </div>
       <div style="max-width:360px; font-size:13.5px; color:#8fa1b5;">
-        Dari Buku Untuk Negeri — "Dunia Ada di Tangan Anak: Ensiklopedia Pengetahuan Seru untuk Si Kecil".
+        Dari Buku Untuk Negeri "Dunia Ada di Tangan Anak: Ensiklopedia Pengetahuan Seru untuk Si Kecil".
       </div>
     </div>
     <div class="foot-bottom">

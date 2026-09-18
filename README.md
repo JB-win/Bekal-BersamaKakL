@@ -1,17 +1,17 @@
-# Website — Dari Buku Untuk Negeri (Bekal Bersama Kak L)
+# Website Dari Buku Untuk Negeri (Bekal Bersama Kak L)
 
 Website multi-halaman untuk program pengabdian "Dari Buku Untuk Negeri: Dunia
-Ada di Tangan Anak — Ensiklopedia Pengetahuan Seru untuk Si Kecil".
+Ada di Tangan Anak: Ensiklopedia Pengetahuan Seru untuk Si Kecil".
 
 ## Halaman
 
 | File | Isi |
 |---|---|
-| `index.html` | **Beranda** — hero, kenapa buku ini, cuplikan 4 judul katalog |
-| `katalog.html` | **Katalog** — 30+ judul lengkap dengan filter kategori |
-| `isi-buku.html` | **Isi Buku** — demo mewarnai interaktif + contoh halaman buku |
-| `testimoni.html` | **Testimoni** — kata orang tua + tim di balik program |
-| `kontak.html` | **Kontak** — FAQ + cara pesan & info kontak |
+| `index.html` | **Beranda**: hero, kenapa buku ini, cuplikan 4 judul katalog |
+| `katalog.html` | **Katalog**: 30+ judul lengkap dengan filter kategori |
+| `isi-buku.html` | **Isi Buku**: demo mewarnai interaktif + contoh halaman buku |
+| `testimoni.html` | **Testimoni**: kata orang tua + tim di balik program |
+| `kontak.html` | **Kontak**: FAQ + cara pesan & info kontak |
 
 Kelima halaman berbagi header (nav), footer, dan tombol WhatsApp mengambang
 yang sama, jadi tampilannya konsisten di mana pun pengunjung berada.
@@ -25,7 +25,7 @@ yang sama, jadi tampilannya konsisten di mana pun pengunjung berada.
 ├── scripts/
 │   ├── books.js         → data katalog buku (judul, kategori, deskripsi)
 │   ├── reviews.js        → data testimoni (masih contoh/ilustratif)
-│   ├── main.js            → render katalog/testimoni, pop-up cover, animasi — dipakai di semua halaman
+│   ├── main.js            → render katalog/testimoni, pop-up cover, animasi, dipakai di semua halaman
 │   └── interactive.js      → filter kategori katalog, accordion FAQ, demo mewarnai interaktif
 ├── images/
 │   ├── logo.jpg
@@ -40,7 +40,7 @@ yang sama, jadi tampilannya konsisten di mana pun pengunjung berada.
 
 Cukup buka `index.html` langsung di browser (double click), atau upload
 seluruh folder ini ke hosting statis (GitHub Pages, Netlify, dsb). Tidak
-perlu server khusus — semua data (katalog & testimoni) ditulis sebagai
+perlu server khusus, semua data (katalog & testimoni) ditulis sebagai
 file `.js` biasa (bukan `.json` yang di-fetch), supaya halaman tetap
 berfungsi normal meskipun dibuka langsung dari file lokal tanpa server.
 
@@ -54,6 +54,6 @@ berfungsi normal meskipun dibuka langsung dari file lokal tanpa server.
 
 ## Masih perlu dilengkapi
 
-1. **Nama panggilan anggota tim lain** (nama pangilan), menyusul di `testimoni.html`.
-2. **Instagram** — menyusul.
+1. **Nama panggilan anggota tim lain** (jika ada), untuk ditambah ke bagian "Tim di Balik Program" di `testimoni.html`.
+2. **Instagram**: masih ditulis "segera hadir" sesuai info di form.
 3. **Testimoni asli** dari pembeli, untuk menggantikan testimoni contoh di `scripts/reviews.js`.

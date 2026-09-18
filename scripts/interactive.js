@@ -83,7 +83,76 @@ document.addEventListener("DOMContentLoaded", () => {
   setupFAQ();
   setupColorDemo();
   setupWaTooltip();
+  setupMobileNav();
+  setupPhotoZoom();
 });
+
+/* ---------------- Pop-up Foto Promosi (bukan cover buku) ---------------- */
+function buildPhotoLightbox() {
+  if (document.getElementById("photoLightbox")) return;
+  const lb = document.createElement("div");
+  lb.className = "photo-lightbox";
+  lb.id = "photoLightbox";
+  lb.innerHTML = `
+    <button class="photo-lightbox-close" id="photoLbClose" aria-label="Tutup">✕</button>
+    <img class="photo-lightbox-img" id="photoLbImg" src="" alt="">
+  `;
+  document.body.appendChild(lb);
+
+  lb.addEventListener("click", (e) => { if (e.target === lb) closePhotoLightbox(); });
+  document.getElementById("photoLbClose").addEventListener("click", closePhotoLightbox);
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") closePhotoLightbox(); });
+}
+
+function openPhotoLightbox(src, alt) {
+  document.getElementById("photoLbImg").src = src;
+  document.getElementById("photoLbImg").alt = alt || "";
+  document.getElementById("photoLightbox").classList.add("open");
+  document.body.classList.add("lb-open");
+}
+
+function closePhotoLightbox() {
+  const lb = document.getElementById("photoLightbox");
+  if (!lb) return;
+  lb.classList.remove("open");
+  document.body.classList.remove("lb-open");
+}
+
+function setupPhotoZoom() {
+  const zoomEls = document.querySelectorAll(".photo-zoom");
+  if (!zoomEls.length) return;
+  buildPhotoLightbox();
+
+  zoomEls.forEach(el => {
+    const img = el.querySelector("img");
+    if (!img) return;
+    const open = () => openPhotoLightbox(img.src, img.alt);
+    el.addEventListener("click", open);
+    el.addEventListener("keypress", (e) => { if (e.key === "Enter") open(); });
+  });
+}
+
+/* ---------------- Menu Mobile (Hamburger) ---------------- */
+function setupMobileNav() {
+  const toggle = document.getElementById("navToggle");
+  const links = document.getElementById("navLinks");
+  if (!toggle || !links) return;
+
+  toggle.addEventListener("click", () => {
+    const isOpen = links.classList.toggle("open");
+    toggle.classList.toggle("open", isOpen);
+    toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+
+  // Tutup menu otomatis saat salah satu link diklik
+  links.querySelectorAll("a").forEach(a => {
+    a.addEventListener("click", () => {
+      links.classList.remove("open");
+      toggle.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
+    });
+  });
+}
 
 /* ---------------- Tooltip WhatsApp Mengambang ---------------- */
 function setupWaTooltip() {

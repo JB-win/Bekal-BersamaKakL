@@ -5,7 +5,7 @@
  * reveal saat scroll. Ditulis tanpa fetch()/AJAX supaya tetap jalan
  * meski file index.html dibuka langsung (double click) tanpa server.
  * File ini dipakai bersama di semua halaman (index, katalog, isi-buku,
- * testimoni, kontak) — setiap fungsi otomatis tidak melakukan apa-apa
+ * testimoni, kontak), setiap fungsi otomatis tidak melakukan apa-apa
  * jika elemen targetnya tidak ada di halaman tersebut.
  */
 

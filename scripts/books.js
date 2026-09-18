@@ -4,7 +4,7 @@
  * Setiap entri butuh: slug (nama file gambar tanpa ekstensi & "-full"),
  * title, tag (kategori), dan desc singkat untuk ditampilkan di pop-up cover.
  *
- * Tambah judul baru di sini otomatis akan muncul di grid katalog —
+ * Tambah judul baru di sini otomatis akan muncul di grid katalog,
  * pastikan file gambarnya ada di images/covers/ dengan nama:
  *   images/covers/<slug>.jpg      (thumbnail grid)
  *   images/covers/<slug>-full.jpg (versi besar untuk pop-up)
@@ -15,11 +15,11 @@ const BOOKS = [
   { slug: "hiu", title: "Jenis-Jenis Hiu", tag: "DUNIA HEWAN",
     desc: "Jelajahi dunia bawah laut dan kenali ragam jenis hiu, dari hiu putih besar sampai hiu martil, dengan fakta unik di tiap halaman." },
   { slug: "ular", title: "Jenis-Jenis Ular", tag: "DUNIA HEWAN",
-    desc: "Ajak anak mengenal berbagai jenis ular tanpa takut — disajikan lewat ilustrasi ramah anak dan fakta menarik seputar reptil ini." },
+    desc: "Ajak anak mengenal berbagai jenis ular tanpa takut, disajikan lewat ilustrasi ramah anak dan fakta menarik seputar reptil ini." },
   { slug: "serangga", title: "Jenis-Jenis Serangga", tag: "DUNIA HEWAN",
     desc: "Dunia serangga yang penuh warna, dari kupu-kupu sampai kumbang, dikemas jadi aktivitas mewarnai sambil belajar." },
   { slug: "kucing", title: "Jenis-Jenis Kucing", tag: "DUNIA HEWAN",
-    desc: "Untuk si kecil pecinta kucing — kenali berbagai ras kucing dari seluruh dunia lengkap dengan ciri khasnya masing-masing." },
+    desc: "Untuk si kecil pecinta kucing, kenali berbagai ras kucing dari seluruh dunia lengkap dengan ciri khasnya masing-masing." },
   { slug: "dinosaurus", title: "Dinosaurus Dunia", tag: "SAINS",
     desc: "Petualangan ke masa purba! Anak-anak akan mengenal nama-nama dinosaurus populer sambil mewarnai ilustrasi zaman prasejarah." },
   { slug: "hewan-laut", title: "Hewan Laut", tag: "DUNIA HEWAN",
