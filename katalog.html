@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Katalog Buku — Bekal Bersama Kak L</title>
+<meta name="description" content="30+ judul Buku Mewarnai & Seri Pengetahuan untuk anak usia 3-8 tahun.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <img src="images/logo.jpg" alt="Logo Bekal Bersama Kak L">
+      <span class="brand-name">Bekal<span> · Bersama Kak L</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="katalog.html" class="active">Katalog</a>
+      <a href="isi-buku.html">Isi Buku</a>
+      <a href="testimoni.html">Testimoni</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-gold btn-small" href="https://wa.me/6282175756560?text=Halo%20Kak%20L%2C%20saya%20mau%20pesan%20buku%20Ensiklopedia%20Pengetahuan%20untuk%20anak%20saya" target="_blank" rel="noopener">
+        <img src="images/icons/wa-icon.png" alt="" class="wa-ico"> <span class="long">Pesan Sekarang</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="catalog" id="katalog">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">KATALOG BUKU</span>
+      <h2>30+ Judul, Satu Rak Pengetahuan Lengkap</h2>
+      <p>Semua buku dalam seri "Buku Mewarnai & Seri Pengetahuan" — dirancang untuk anak usia 3–8 tahun. Klik cover untuk melihat lebih jelas.</p>
+    </div>
+    <div class="cat-filter" id="catFilter">
+      <button class="chip active" data-filter="all">Semua</button>
+      <button class="chip" data-filter="DUNIA HEWAN">🐾 Dunia Hewan</button>
+      <button class="chip" data-filter="SAINS">🔬 Sains</button>
+      <button class="chip" data-filter="DUNIA & BUDAYA">🌏 Dunia & Budaya</button>
+    </div>
+    <div class="cat-grid" id="catGrid">
+      <!-- diisi otomatis oleh scripts/main.js dari data scripts/books.js -->
+    </div>
+    <div class="cat-more">
+      <a class="btn btn-navy" href="https://wa.me/6282175756560?text=Halo%20Kak%20L%2C%20boleh%20kirimkan%20katalog%20lengkap%2030%2B%20judul%20bukunya%3F" target="_blank" rel="noopener"><img src="images/icons/wa-icon.png" alt="" class="wa-ico"> Lihat Semua 30+ Judul via WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img src="images/logo.jpg" alt="Logo Bekal">
+        <span>Bekal · Bersama Kak L</span>
+      </div>
+      <div style="max-width:360px; font-size:13.5px; color:#8fa1b5;">
+        Dari Buku Untuk Negeri — "Dunia Ada di Tangan Anak: Ensiklopedia Pengetahuan Seru untuk Si Kecil".
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Bekal Bersama Kak L. Semua hak cipta dilindungi.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="float-wa-wrap">
+  <div class="wa-tooltip" id="waTooltip">
+    <button class="wa-tooltip-close" id="waTooltipClose" aria-label="Tutup">✕</button>
+    <p class="wa-tooltip-title">Ada yang bisa dibantu?</p>
+    <p class="wa-tooltip-text">Chat langsung untuk tanya judul, stok, atau cara pesan buku!</p>
+  </div>
+  <a class="float-wa" href="https://wa.me/6282175756560?text=Halo%20Kak%20L%2C%20saya%20mau%20pesan%20buku%20Ensiklopedia%20Pengetahuan%20untuk%20anak%20saya" target="_blank" rel="noopener" aria-label="Order sekarang via WhatsApp">
+    <span class="float-wa-ring"></span>
+    <span class="float-wa-icon"><img src="images/icons/wa-icon.png" alt="Chat WhatsApp"></span>
+  </a>
+</div>
+
+<script src="scripts/books.js"></script>
+<script src="scripts/reviews.js"></script>
+<script src="scripts/main.js"></script>
+<script src="scripts/interactive.js"></script>
+
+</body>
+</html>
